@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:layout_editor_absoluteY="25dp"
+                                             tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/dev_current"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="60dp"
+        android:width="200dp"
+        android:height="80dp"
+        android:elevation="0dp"
+        android:onClick="startCurrentDeviation"
+        android:text="@string/dev_current"
+        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/dev_text"
+        app:layout_constraintRight_toRightOf="@+id/dev_text"
+        app:layout_constraintTop_toBottomOf="@+id/dev_text"/>
+
+    <Button
+        android:id="@+id/dev_previous"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:width="200dp"
+        android:height="80dp"
+        android:elevation="0dp"
+        android:onClick="startPreviousDeviation"
+        android:text="@string/dev_previous"
+        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/dev_current"
+        app:layout_constraintRight_toRightOf="@+id/dev_current"
+        app:layout_constraintTop_toBottomOf="@+id/dev_current"/>
+
+    <Button
+        android:id="@+id/dev_all"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="60dp"
+        android:width="200dp"
+        android:height="80dp"
+        android:elevation="0dp"
+        android:onClick="startAllDeviation"
+        android:text="@string/dev_all"
+        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/dev_previous"
+        app:layout_constraintRight_toRightOf="@+id/dev_previous"
+        app:layout_constraintTop_toBottomOf="@+id/dev_previous"/>
+
+    <TextView
+        android:id="@+id/dev_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dev_text"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Avfalls Kontroll</string>
+    <string name="company">TVAB</string>
+    <string name="seekbar">Skärmstyrka</string>
+    <string name="dev_current">Aktuella</string>
+    <string name="dev_previous">Tidigare</string>
+    <string name="dev_all">Alla</string>
+    <string name="dev_text">Avvikelser</string>
+</resources>

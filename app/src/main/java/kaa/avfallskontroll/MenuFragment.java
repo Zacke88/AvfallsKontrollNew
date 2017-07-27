@@ -35,8 +35,8 @@ public class MenuFragment extends Fragment {
         // initialise your views
     }
 
-    public void setButtonInactive() {
-        Button btn = (Button) getView().findViewById(R.id.dev_current);
+    public void setButtonInactive(View view) {
+        Button btn = (Button) view.findViewById(R.id.dev_current);
         btn.setEnabled(false);
 
     }

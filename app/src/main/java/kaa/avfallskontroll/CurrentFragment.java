@@ -31,7 +31,7 @@ public class CurrentFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
         // initialise your views
-        TableLayout table = (TableLayout) getView().findViewById(R.id
+        TableLayout table = (TableLayout) view.findViewById(R.id
                 .current_table);
 
         TableRow row0 = new TableRow(getContext());
@@ -68,26 +68,30 @@ public class CurrentFragment extends Fragment {
             TextView t1v = new TextView(getContext());
             t1v.setText("ABC 12" + i + "        ");
             t1v.setTextAppearance(R.style.TextAppearance_AppCompat_Large_Inverse);
-            t1v.setTextColor(getResources().getColor(R.color.colorAccent));
+            t1v.setTextColor(getResources().getColor(R.color
+                    .colorAccent, null));
             tbrow.addView(t1v);
 
             TextView t2v = new TextView(getContext());
             t2v.setText("20" + i + "        ");
             t2v.setTextAppearance(R.style.TextAppearance_AppCompat_Large_Inverse);
-            t2v.setTextColor(getResources().getColor(R.color.colorAccent));
+            t2v.setTextColor(getResources().getColor(R.color.colorAccent,
+                    null));
             tbrow.addView(t2v);
 
             TextView t3v = new TextView(getContext());
             t3v.setText("TVAB" + i + "        ");
             t3v.setTextAppearance(R.style
                     .TextAppearance_AppCompat_Large_Inverse);
-            t3v.setTextColor(getResources().getColor(R.color.colorAccent));
+            t3v.setTextColor(getResources().getColor(R.color.colorAccent,
+                    null));
             tbrow.addView(t3v);
 
             TextView t4v = new TextView(getContext());
             t4v.setText("1" + i + " ton" + "        ");
             t4v.setTextAppearance(R.style.TextAppearance_AppCompat_Large_Inverse);
-            t4v.setTextColor(getResources().getColor(R.color.colorAccent));
+            t4v.setTextColor(getResources().getColor(R.color.colorAccent,
+                    null));
             tbrow.addView(t4v);
 
             ImageView i1v = new ImageView(getContext());
@@ -100,7 +104,8 @@ public class CurrentFragment extends Fragment {
 
             tbrow.setMinimumHeight(60);
             tbrow.setGravity(Gravity.CENTER_VERTICAL);
-            tbrow.setBackground(getResources().getDrawable(R.drawable.table_border));
+            tbrow.setBackground(getResources().getDrawable(R.drawable
+                    .table_border, null));
 
             table.addView(tbrow);
         }

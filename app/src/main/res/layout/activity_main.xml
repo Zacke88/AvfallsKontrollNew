@@ -48,26 +48,29 @@
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:layout_width="560dp"
+        android:layout_width="580dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="40dp">
 
     </FrameLayout>
 
     <WebView
         android:id="@+id/webView_container"
-        android:layout_width="560dp"
+        android:layout_width="580dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="130dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
 
 </android.support.constraint.ConstraintLayout>

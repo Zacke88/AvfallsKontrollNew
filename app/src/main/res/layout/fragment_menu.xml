@@ -23,9 +23,9 @@
         android:text="@string/dev_current"
         android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
         android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="@+id/dev_text"
-        app:layout_constraintRight_toRightOf="@+id/dev_text"
-        app:layout_constraintTop_toBottomOf="@+id/dev_text"/>
+        app:layout_constraintLeft_toLeftOf="@+id/current_text"
+        app:layout_constraintRight_toRightOf="@+id/current_text"
+        app:layout_constraintTop_toBottomOf="@+id/current_text"/>
 
     <Button
         android:id="@+id/dev_previous"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dev_previous"/>
 
     <TextView
-        android:id="@+id/dev_text"
+        android:id="@+id/current_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"

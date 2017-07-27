@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragment_container, fragment);
-        ft.addToBackStack(null);
         ft.commit();
     }
 
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             WebView web = (WebView) findViewById(R.id.webView_container);
             WebSettings webSettings = web.getSettings();
             webSettings.setJavaScriptEnabled(true);
-            web.loadUrl("http://www.stackoverflow.com");
+            web.loadUrl("http://www.aftonbladet.se");
         }
         catch(Exception e) {
             Log.e("msg", Log.getStackTraceString(e.getCause().getCause()));
@@ -60,8 +59,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startCurrentDeviation(View v) {
-        Button btn = (Button) findViewById(R.id.dev_current);
-        btn.setEnabled(false);
+        Fragment fragment = new CurrentFragment();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.fragment_container, fragment);
+        ft.addToBackStack(null);
+        ft.commit();
     }
 
     public void startPreviousDeviation(View v) {
@@ -72,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
     public void startAllDeviation(View v) {
         Button btn = (Button) findViewById(R.id.dev_all);
         btn.setEnabled(false);
+    }
+
+    public void startMenu(View v) {
+        super.onBackPressed();
     }
 
     public void screenBrigtness() {

@@ -33,7 +33,6 @@ public class MenuFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
         // initialise your views
-        setButtonInactive();
     }
 
     public void setButtonInactive() {

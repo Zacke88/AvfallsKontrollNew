@@ -6,4 +6,9 @@
     <string name="dev_previous">Tidigare</string>
     <string name="dev_all">Alla</string>
     <string name="dev_text">Avvikelser</string>
+    <string name="back">Tillbaka</string>
+    <string name="reg">Regnr</string>
+    <string name="waste">Avfall</string>
+    <string name="business">Företag</string>
+    <string name="weight">Vikt</string>
 </resources>

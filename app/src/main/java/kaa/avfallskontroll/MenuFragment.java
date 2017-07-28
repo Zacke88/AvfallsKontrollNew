@@ -24,23 +24,13 @@ public class MenuFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // do your variables initialisations here except Views!!!
-    }
-
-    @Override
     public void onViewCreated(View view, Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
-        // initialise your views
     }
 
     public void setButtonInactive(View view) {
         Button btn = (Button) view.findViewById(R.id.dev_current);
         btn.setEnabled(false);
-
     }
-
-
 
 }

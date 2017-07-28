@@ -11,4 +11,8 @@
     <string name="waste">Avfall</string>
     <string name="business">Företag</string>
     <string name="weight">Vikt</string>
+    <string name="vehicle">Fordon</string>
+    <string name="article">Artikel</string>
+    <string name="firstWeightTime">Intid</string>
+    <string name="firstWeight">Vikt</string>
 </resources>
